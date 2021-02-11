@@ -38,7 +38,9 @@ const App = () => {
       ) : (
         <View style={styles.container}>
           {users.map((item) => (
-            <Text style={styles.text}>{item}</Text>
+            <Text key={item} style={styles.text}>
+              {item}
+            </Text>
           ))}
         </View>
       )}
